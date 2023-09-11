@@ -10,7 +10,7 @@ from paddleocr import PaddleOCR, draw_ocr
 # use_angle_cls
 ocr = PaddleOCR(det_model_dir='./det_model', rec_model_dir='./rec_model',
                 cls_model_dir='./cls_model', use_angle_cls=True)
-img_path = './chat.png'
+img_path = './2.png'
 result = ocr.ocr(img_path, cls=True)
 for idx in range(len(result)):
     res = result[idx]
